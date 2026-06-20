@@ -1,0 +1,142 @@
+site_name: Guia Técnico-Metodológico para Propostas em Computação
+site_description: Como formalizar, implementar, validar e documentar modelos, métodos,
+  metodologias, arquiteturas, frameworks, plataformas, pipelines, agentes e artefatos
+  computacionais.
+site_author: Grupo de Pesquisa / UNESP
+repo_name: guia-tecnico-metodologico
+theme:
+  name: material
+  language: pt-BR
+  features:
+  - navigation.tabs
+  - navigation.sections
+  - navigation.expand
+  - navigation.indexes
+  - toc.follow
+  - search.highlight
+  - search.share
+  - content.code.copy
+  palette:
+  - scheme: default
+    primary: indigo
+    accent: blue
+  - scheme: slate
+    primary: indigo
+    accent: blue
+    toggle:
+      icon: material/weather-night
+      name: Modo escuro
+  font:
+    text: Roboto
+    code: Roboto Mono
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- tables
+- footnotes
+- toc
+- pymdownx.details: {}
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: '!!python/name:pymdownx.superfences.fence_code_format'
+- pymdownx.tabbed
+- pymdownx.tasklist
+- pymdownx.mark
+- pymdownx.emoji
+plugins:
+- search
+- awesome-pages
+- git-revision-date-localized
+nav:
+- Início: index.md
+- Como usar:
+  - como-usar/index.md
+  - como-usar/publicacao-github-pages.md
+  - como-usar/roteiro-rapido.md
+- Tipos de proposta:
+  - Visão geral: tipos/index.md
+  - Modelo: tipos/modelo.md
+  - Modelo de referência: tipos/modelo-referencia.md
+  - Método: tipos/metodo.md
+  - Técnica: tipos/tecnica.md
+  - Metodologia: tipos/metodologia.md
+  - Arquitetura: tipos/arquitetura.md
+  - Framework: tipos/framework.md
+  - Framework técnico-metodológico: tipos/framework-tecnico-metodologico.md
+  - Plataforma: tipos/plataforma.md
+  - Pipeline: tipos/pipeline.md
+  - Agente inteligente: tipos/agente-inteligente.md
+  - Artefato computacional: tipos/artefato-computacional.md
+- Conceitos:
+  - conceitos/index.md
+  - conceitos/glossario.md
+  - conceitos/relacoes.md
+  - conceitos/dimensoes-transversais.md
+  - conceitos/unespdatalens-aproveitamentos.md
+- Fundamentos:
+  - fundamentos/index.md
+  - fundamentos/dsr.md
+  - fundamentos/adr.md
+  - fundamentos/estudo-de-caso.md
+  - fundamentos/pesquisa-experimental.md
+  - fundamentos/iso-42010.md
+  - fundamentos/crisp.md
+  - fundamentos/dataops-mlops.md
+  - fundamentos/w3c-prov-fair.md
+  - fundamentos/nist-ai-rmf.md
+- Do problema ao artefato:
+  - problemas/index.md
+  - problemas/lacunas.md
+  - problemas/perguntas-pesquisa.md
+  - problemas/problemas-tratados.md
+- Artefatos e documentação:
+  - artefatos/index.md
+  - artefatos/metadados.md
+  - artefatos/contratos.md
+  - artefatos/catalogo.md
+  - artefatos/repositorio.md
+  - artefatos/reprodutibilidade.md
+- Métricas e validação:
+  - metricas/index.md
+  - metricas/qualidade.md
+  - metricas/fairness.md
+  - metricas/rastreabilidade.md
+  - metricas/usabilidade.md
+  - metricas/agentes.md
+  - metricas/matriz-validacao.md
+- Técnicas e ferramentas:
+  - tecnicas/index.md
+  - tecnicas/qualidade.md
+  - tecnicas/integracao.md
+  - tecnicas/fairness.md
+  - tecnicas/grafos.md
+  - tecnicas/mlops.md
+  - tecnicas/llm-agentes.md
+- Aplicações:
+  - aplicacoes/index.md
+  - aplicacoes/educacao.md
+  - aplicacoes/politicas-publicas.md
+  - aplicacoes/saude.md
+  - aplicacoes/trabalho-organizacoes.md
+  - aplicacoes/projetos-exemplo.md
+- Trilhas de estudo:
+  - trilhas/index.md
+  - trilhas/fundamentos.md
+  - trilhas/implementacao-pipeline.md
+  - trilhas/governanca-rastreabilidade.md
+  - trilhas/modelagem-ia-grafos.md
+  - trilhas/dimensoes-complementares.md
+  - trilhas/orientacao-ic-mestrado-doutorado.md
+- Templates:
+  - templates/index.md
+  - templates/modelo-verbete.md
+  - templates/especificacao-modulo.md
+  - templates/metadados.md
+  - templates/contrato.md
+  - templates/relatorio-validacao.md
+  - templates/checklist-final.md
+- Guia integral:
+  - guia-completo/material-integral.md
