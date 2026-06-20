@@ -1,36 +1,21 @@
-# Guia Técnico-Metodológico — Site MkDocs
+# Guia Técnico-Metodológico — Site GitHub Pages
 
-Projeto completo em formato Git/MkDocs para publicar o Guia Técnico-Metodológico como site HTML no GitHub Pages.
+Este repositório contém duas versões do guia:
 
-## Como executar localmente
+1. **`docs/`** — site HTML pronto para publicar no GitHub Pages usando **Deploy from a branch → main /docs**.
+2. **`mkdocs-src/`** — projeto-fonte em MkDocs para edição futura.
 
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Linux/macOS
-# .venv\Scripts\activate  # Windows
-pip install -r requirements.txt
-mkdocs serve
-```
-
-Acesse: http://127.0.0.1:8000
-
-## Como publicar no GitHub Pages
+## Publicação recomendada pelo GitHub Web
 
 1. Crie um repositório no GitHub.
-2. Envie todos os arquivos deste projeto.
-3. Ative GitHub Pages via GitHub Actions.
-4. O workflow `.github/workflows/deploy.yml` fará o build e publicará o site.
+2. Envie todos os arquivos deste pacote para a branch `main`.
+3. Vá em **Settings → Pages**.
+4. Escolha **Deploy from a branch**.
+5. Selecione **Branch: main** e **Folder: /docs**.
+6. Salve.
 
-## Estrutura
+Não é necessário criar branch `gh-pages`. O erro anterior ocorreu porque o pacote dependia de GitHub Actions/MkDocs; esta versão já inclui o HTML pronto.
 
-- `docs/`: páginas do site.
-- `docs/tipos/`: tipos de proposta.
-- `docs/conceitos/`: conceitos fundamentais.
-- `docs/fundamentos/`: fundamentação teórica e metodológica.
-- `docs/artefatos/`: artefatos, metadados e contratos.
-- `docs/metricas/`: métricas e avaliação.
-- `docs/tecnicas/`: técnicas, métodos e ferramentas.
-- `docs/problemas/`: problemas e lacunas.
-- `docs/aplicacoes/`: aplicações por domínio.
-- `docs/trilhas/`: roteiros de estudo.
-- `docs/templates/`: modelos reutilizáveis.
+## Edição avançada com MkDocs
+
+Para editar e gerar novamente o site via MkDocs, use a pasta `mkdocs-src/`.
